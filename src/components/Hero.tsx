@@ -186,7 +186,7 @@ export default function Hero({ isAIMode }: { isAIMode: boolean }) {
 
                 {/* SECOND COPY (IDENTICAL) */}
                 <div className="flex gap-10 pr-10">
-                  <span>214% organic lift</span>
+                  <span>214% organic lift.</span>
                   <span>3.7x ROAS</span>
                   <span>98/100 performance</span>
                   <span>+120k monthly impressions</span>
