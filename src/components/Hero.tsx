@@ -120,7 +120,7 @@ export default function Hero({ isAIMode }: { isAIMode: boolean }) {
             </p>
 
             {/* Heading */}
-            <h1 className="relative whitespace-nowrap text-4xl sm:text-3xl lg:text-7xl font-extrabold text-white leading-none">
+            <h1 className="relative whitespace-normal lg:whitespace-nowrap text-4xl sm:text-4xl lg:text-7xl font-extrabold text-white leading-tight">
               Ignite Your{" "}
               <span className="relative inline-block">
                 {/* BACK LIGHT */}
