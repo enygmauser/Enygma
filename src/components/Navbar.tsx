@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
 
 type NavbarProps = {
-  setIsAIMode: Dispatch<SetStateAction<boolean>>;
+  setIsAIMode?: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export default function Navbar({ setIsAIMode }: NavbarProps) {
@@ -124,7 +124,7 @@ export default function Navbar({ setIsAIMode }: NavbarProps) {
               <Link href="/contact">
                 <Button>Contact</Button>
               </Link>
-              <Button onClick={() => setIsAIMode((prev) => !prev)}>
+              <Button onClick={() => setIsAIMode?.((prev) => !prev)}>
                 ✨ AI
               </Button>
             </div>
@@ -189,7 +189,7 @@ export default function Navbar({ setIsAIMode }: NavbarProps) {
               <Link href="/contact">
                 <Button>Contact</Button>
               </Link>
-              <Button onClick={() => setIsAIMode((prev) => !prev)}>
+              <Button onClick={() => setIsAIMode?.((prev) => !prev)}>
                 ✨ AI
               </Button>
             </div>

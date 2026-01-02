@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "@/src/components/ui/Button";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Hero({ isAIMode }: { isAIMode: boolean }) {
@@ -152,7 +153,9 @@ export default function Hero({ isAIMode }: { isAIMode: boolean }) {
 
             {/* CTAs */}
             <div className="mt-10 flex items-center gap-6">
-              <Button className="h-10 px-5 text-sm">About Us</Button>
+              <Link href="/about">
+                <Button className="h-10 px-5 text-sm">About Us</Button>
+              </Link>
 
               <Button
                 variant="outline"
