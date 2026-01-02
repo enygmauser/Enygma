@@ -21,7 +21,17 @@ export default function Banner() {
 
           <div className="mt-8">
             <Link href="/contact">
-              <Button className="h-16 px-8 font-bold min-w-[120px] text-lg">
+              <Button
+                className="
+    w-full sm:w-auto
+    h-12 sm:h-11
+    px-5 sm:px-8
+    min-w-[120px] sm:min-w-[100px]
+    text-[15px] sm:text-base
+    font-bold
+    rounded-full
+  "
+              >
                 Contact Us
               </Button>
             </Link>

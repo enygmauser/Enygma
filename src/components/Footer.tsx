@@ -42,16 +42,23 @@ export default function Footer() {
 
               <input
                 type="email"
+                inputMode="email"
+                autoComplete="email"
                 placeholder="Enter your email"
                 className="
-                  flex-1 h-11 rounded-full px-5
-                  bg-white/5 text-sm text-white
-                  border border-white/10
-                  outline-none
-                  placeholder:text-gray-500
-                  focus:border-red-400/60
-                  transition
-                "
+    w-full sm:flex-1
+    h-12 sm:h-11
+    rounded-full
+    px-4 sm:px-5
+    bg-white/5
+    text-[14px] sm:text-sm
+    text-white
+    border border-white/10
+    outline-none
+    placeholder:text-gray-400
+    focus:border-red-400/60
+    transition
+  "
               />
 
               <Button className="h-11 px-6 text-sm whitespace-nowrap">
