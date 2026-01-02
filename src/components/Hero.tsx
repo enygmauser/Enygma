@@ -21,7 +21,7 @@ export default function Hero({ isAIMode }: { isAIMode: boolean }) {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-[#0B0D11] w-full pt-28 pb-28 mt-35.8 min-h-[87vh]">
+    <section className="relative overflow-hidden bg-[#0B0D11] w-full pt-28 pb-28 mt-35.8 min-h-[80vh]">
       {/* ================= RADIAL RED BACKGROUND ================= */}
       <div className="absolute inset-0 z-0">
         <div className="absolute left-1/2 top-[-10%] h-[900px] w-[900px] -translate-x-1/2 rounded-full bg-red-600/25 blur-[220px]" />
@@ -120,7 +120,7 @@ export default function Hero({ isAIMode }: { isAIMode: boolean }) {
             </p>
 
             {/* Heading */}
-            <h1 className="relative whitespace-nowrap text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white leading-none">
+            <h1 className="relative whitespace-nowrap text-4xl sm:text-4xl lg:text-7xl font-extrabold text-white leading-none">
               Ignite Your{" "}
               <span className="relative inline-block">
                 {/* BACK LIGHT */}
