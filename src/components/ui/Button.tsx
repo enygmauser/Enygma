@@ -1,16 +1,19 @@
-type ButtonProps = {
-  children: React.ReactNode;
+import React, { ButtonHTMLAttributes } from "react";
+
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: "primary" | "outline";
-  className?: string; // ✅ added
+  className?: string;
 };
 
 export default function Button({
   children,
   variant = "primary",
-  className = "", // ✅ added
+  className = "",
+  ...props
 }: ButtonProps) {
   return (
     <button
+      {...props}
       className={
         variant === "primary"
           ? `

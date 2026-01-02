@@ -1,6 +1,8 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/theme";
 @import "tailwindcss/utilities";
+
+/* ================= FLOATING PARTICLES ================= */
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -18,4 +20,38 @@
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+/* ================= ELLIPSE ROTATION (SVG FIXED) ================= */
+
+/* BIG ellipse — slower */
+.ellipse-fast {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotateFast 44s linear infinite;
+}
+
+/* SMALL ellipse — faster */
+.ellipse-slow {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotateSlow 24s linear infinite;
+}
+
+@keyframes rotateFast {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateSlow {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }

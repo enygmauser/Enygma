@@ -5,6 +5,8 @@ import Button from "@/src/components/ui/Button";
 import Link from "next/link";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="relative w-full bg-[#0B0D11] border-t border-white/10">
       <div className="mx-auto max-w-none px-6 sm:px-8 md:px-12 lg:px-20 py-10">
@@ -76,7 +78,7 @@ export default function Footer() {
             </div>
 
             <span className="text-xs text-gray-500">
-              © 2025 Enygma. All Rights Reserved
+              © {currentYear} Enygma. All Rights Reserved
             </span>
           </div>
         </div>

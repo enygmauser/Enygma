@@ -6,8 +6,13 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
+import { Dispatch, SetStateAction } from "react";
 
-export default function Navbar() {
+type NavbarProps = {
+  setIsAIMode: Dispatch<SetStateAction<boolean>>;
+};
+
+export default function Navbar({ setIsAIMode }: NavbarProps) {
   const [open, setOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const dropdownRef = useRef<HTMLLIElement | null>(null);
@@ -119,7 +124,9 @@ export default function Navbar() {
               <Link href="/contact">
                 <Button>Contact</Button>
               </Link>
-              <Button>✨ AI</Button>
+              <Button onClick={() => setIsAIMode((prev) => !prev)}>
+                ✨ AI
+              </Button>
             </div>
           </div>
 
@@ -182,7 +189,9 @@ export default function Navbar() {
               <Link href="/contact">
                 <Button>Contact</Button>
               </Link>
-              <Button>✨ AI</Button>
+              <Button onClick={() => setIsAIMode((prev) => !prev)}>
+                ✨ AI
+              </Button>
             </div>
           </motion.div>
         )}
